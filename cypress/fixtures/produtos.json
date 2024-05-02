@@ -1,0 +1,26 @@
+[
+    {
+        "nomeProduto": "Abominable Hoodie",
+        "tamanho": "XS",
+        "cor": "Green",
+        "quantidade": 1
+    },
+    {
+        "nomeProduto": "Chaz Kangeroo Hoodie",
+        "tamanho": "L",
+        "cor": "Black",
+        "quantidade": 1
+    },
+    {
+        "nomeProduto": "Geo Insulated Jogging Pant",
+        "tamanho": "34",
+        "cor": "Green",
+        "quantidade": 1
+    },
+    {
+        "nomeProduto": "Aero Daily Fitness Tee",
+        "tamanho": "M",
+        "cor": "Brown",
+        "quantidade": 1
+    }
+]

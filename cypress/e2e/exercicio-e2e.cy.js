@@ -20,7 +20,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     cy.get('#username').type(perfil.usuario)
     cy.get('#password').type(perfil.senha)
     cy.get('.woocommerce-form > .button').click()
-    cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain' , 'Olá, aluno_ebac (não é aluno_ebac? Sair)')
+    cy.get('.woocommerce-MyAccount-content > :nth-child(2)').should('contain' , 'Olá, vini.arpini (não é vini.arpini? Sair)')
 
     cy.fixture('produtos').then(dados => {
         produtosPage.buscarProduto(dados[0].nomeProduto)
@@ -39,6 +39,13 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
         cy.get('#cart > .dropdown-menu > .widget_shopping_cart_content > .mini_cart_content > .mini_cart_inner > .mcart-border > .buttons > .view-cart').click()
         cy.get('.checkout-button').click()
         cy.get('#terms').click()
+        cy.get('#billing_first_name').clear().type(perfil.nome)
+        cy.get('#billing_last_name').clear().type(perfil.sobrenome)
+        cy.get('#billing_address_1').clear().type(perfil.endereco)
+        cy.get('#billing_city').clear().type(perfil.cidade)
+        cy.get('#billing_postcode').clear().type(perfil.cep)
+        cy.get('#billing_phone').clear().type(perfil.telefone)
+
         cy.get('#place_order').click()
         cy.wait(6000)
         cy.get('.woocommerce-notice').should('contain', 'Obrigado. Seu pedido foi recebido.')

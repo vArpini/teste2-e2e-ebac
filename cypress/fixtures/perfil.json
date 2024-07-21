@@ -1,4 +1,10 @@
 {
-    "usuario": "aluno_ebac@teste.com",
-    "senha": "teste@teste.com"
+    "usuario": "vini.arpini@teste.com",
+    "senha": "teste",
+    "nome": "vinicius",
+    "sobrenome": "arpini",
+    "endereco": "avenida teste",
+    "cidade": "sinop",
+    "cep": "78555398",
+    "telefone": "66984052631"
   }
